@@ -74,7 +74,6 @@ export class Map {
         this.skipBtn = document.getElementById('skip');
         this.employees = document.getElementById('employees');
         this.price = document.getElementById('price');
-        this.setPrice = document.getElementById('setprice');
 
         this.showMenu = showMenu;
         this.hideMenu = hideMenu;
@@ -82,7 +81,6 @@ export class Map {
         this.upgradeBtn.addEventListener('click', () => this.upgrade());
         this.hireBtn.addEventListener('click', () => this.hire());
         this.skipBtn.addEventListener('click', () => this.tick());
-        this.setPrice.addEventListener('click', () => this.setUserShopPrice());
 
         this.updateButtons();
         this.particles = [];
